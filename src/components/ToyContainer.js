@@ -8,7 +8,7 @@ function ToyContainer({ toys, setToys }) {
     fetch("http://localhost:3001/toys")
       .then(res => res.json())
       .then(data => setToys(data))
-  }, [setToys])
+  }, [])
 
   // DELETES TOYS
   function onDelete(id) {

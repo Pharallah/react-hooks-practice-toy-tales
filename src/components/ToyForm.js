@@ -27,7 +27,7 @@ function ToyForm({ onToySubmit }) {
       body: JSON.stringify(newToy)
     })
       .then(res => res.json())
-      .then(createdToy => console.log(createdToy))
+      .then(createdToy => onToySubmit(createdToy))
   }
   
   

@@ -17,7 +17,7 @@ function ToyCard({
     onDelete(id)
   }
   
-  // LIKE BUTTON
+  // PATCH/UPDATE LIKE BUTTON
   function handleLike() {
     // Increment like counter
     const updatedLike = likes += 1
